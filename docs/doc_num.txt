@@ -1,0 +1,8 @@
+docnum123456789
+contract1234567
+docnum123456
+contract1234
+docnum1234567891111
+contract12345671111
+docnum123456;789
+contract12345;67
