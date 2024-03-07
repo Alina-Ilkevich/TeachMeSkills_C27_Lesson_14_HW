@@ -19,8 +19,8 @@ public class Log {
         try (BufferedReader reader = new BufferedReader(new FileReader(PathToFile.DOC_NUM_FILE))){
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String dateLog = sdf.format(date);
-            String message = "[INFO] -> " + dateLog + " -> " + infoMessage + "\n";
-            Files.write(Paths.get(EXECUTION_LOG_FILE),infoMessage.getBytes(), StandardOpenOption.APPEND);
+            String message = "[INFO] -> " + dateLog + " -> " + infoMessage;
+            Files.write(Paths.get(EXECUTION_LOG_FILE),message.getBytes(), StandardOpenOption.APPEND);
         }catch (IOException e){
 
         }
