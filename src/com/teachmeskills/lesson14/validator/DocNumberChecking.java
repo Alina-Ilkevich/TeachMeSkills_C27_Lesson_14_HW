@@ -19,13 +19,13 @@ public class DocNumberChecking {
             while ((docNumber = reader.readLine()) != null) {
                 if (docNumber.length() != 15) {
                     Log.logInfo(new Date(), "The document number must contain 15 characters\n");
-                    //проверка на "начинается с" не работает
                     //и сделать запись названий в валид и инвалид
                 } else if (!docNumber.startsWith("docnum") && !docNumber.startsWith("contract")) {
                     Log.logInfo(new Date(), "The document number must start with docnum or contract\n");
-                } else if (!docNumber.matches(DocNumberRegexp.REGEXP)) {
+                } /*else if (!docNumber.matches(DocNumberRegexp.REGEXP)) {
+                    //эта проверка не работает
                     Log.logInfo(new Date(), "The document number must not have any service characters\n");
-                } else if (docNumber.matches(DocNumberRegexp.DOCNUM_REGEXP)) {
+                }*/ else if (docNumber.matches(DocNumberRegexp.DOCNUM_REGEXP)) {
                     Log.logInfo(new Date(), "The file name " + docNumber + " was successfully recorded\n");
                 } else if (docNumber.matches(DocNumberRegexp.CONTRACT_REGEXP)) {
                     Log.logInfo(new Date(), "The file name " + docNumber + " was successfully recorded\n");
