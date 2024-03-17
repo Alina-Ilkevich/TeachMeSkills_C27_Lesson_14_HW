@@ -1,0 +1,6 @@
+docnum123456 Its length is not equal to 15 characters
+contract1234 Its length is not equal to 15 characters
+docnum1234567891111 Its length is not equal to 15 characters
+contract12345671111 Its length is not equal to 15 characters
+docnum123456(78 The document number contains service characters
+contract12345&6 The document number contains service characters

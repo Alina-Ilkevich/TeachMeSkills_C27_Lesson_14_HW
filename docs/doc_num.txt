@@ -4,5 +4,5 @@ docnum123456
 contract1234
 docnum1234567891111
 contract12345671111
-docnum123456&78
+docnum123456(78
 contract12345&6
